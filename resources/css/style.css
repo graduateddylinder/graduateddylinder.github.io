@@ -1,10 +1,11 @@
 /* Navigation Bar */
 .navbar {
   color:white;
+  opacity: 0.8;
 }
 
 .navbar-fixed-left {
-  width: 160px;
+  width: 200px;
   position: fixed;
   border-radius: 0;
   height: 100%;
@@ -13,6 +14,11 @@
 .navbar-fixed-left .navbar-nav > li {
   /* float: none;  /* Cancel default li float: left */
   width: 160px;
+}
+
+.navbar-fixed-left .navbar-nav > li > a > i{
+  /* float: none;  /* Cancel default li float: left */
+  padding-right: 20px;
 }
 
 /* Jumbotron */

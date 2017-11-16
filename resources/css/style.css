@@ -1,3 +1,20 @@
+/* Navigation Bar */
+.navbar {
+  color:white;
+}
+
+.navbar-fixed-left {
+  width: 160px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  /* float: none;  /* Cancel default li float: left */
+  width: 160px;
+}
+
 /* Jumbotron */
 .jumbotron {
   color: white;
@@ -6,6 +23,9 @@
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+  height: 1000px;
   text-align: center;
   background-image: url("../images/jumbotron_background.JPG");*/
+  background-position: center;
+  background-size: cover;
 }

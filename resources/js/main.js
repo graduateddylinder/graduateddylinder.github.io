@@ -7,10 +7,9 @@ $(document).ready(function() {                      // Begin every .js with this
 
     $('html, body').animate({                       // Select html and body elements and run jquery animate function //
         'scrollTop': $target.offset().top           // Parameter of animate, pass in $target and set offset to top of div //
-    }, 1000, 'swing', function () {                 // Set timing to 1000ms, choose 'swing' animation start callback function //
-        window.location.hash = target;              // (Optional), when clicked, sets hash in window to whatever was clicked ? //
-
-    });
+    }, 1000, 'swing'); // , function () {                 // Set timing to 1000ms, choose 'swing' animation start callback function //
+        // window.location.hash = target;              // (Optional), when clicked, sets hash in window to whatever was clicked ? //
+      // });
   });
 });
 

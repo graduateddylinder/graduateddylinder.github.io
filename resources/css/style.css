@@ -90,9 +90,30 @@ html, body {
 /* CV */
 #cv {
   height: 1000px;
-  margin-left: 120px;
+  margin-left: 0;
+  background-color: black;
+  overflow: scroll;
+  text-align: center;
+}
+
+#cv::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#cv::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#cv::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
 }
 
 #cv .image-container{
-  margin-bottom: -300px;
+  margin-left: 200px;
+  margin-bottom: -100px;
 }

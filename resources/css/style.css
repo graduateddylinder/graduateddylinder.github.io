@@ -37,13 +37,15 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  text-align: center;
-  background-image: url("../images/jumbotron_background.JPG");*/
-  background-position: center;
+  text-align: left;
+  background-image: url("../images/jumbotron_background_reduced.JPG");*/
+  background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .jumbotron h1 {
-  height: 100%;
-  margin: 0;
+  font-family: 'Roboto';
+  padding-left: 250px;
+
 }

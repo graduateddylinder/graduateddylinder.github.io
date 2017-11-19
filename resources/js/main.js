@@ -11,6 +11,11 @@ $(document).ready(function() {                      // Begin every .js with this
         // window.location.hash = target;              // (Optional), when clicked, sets hash in window to whatever was clicked ? //
       // });
   });
+
+  $('.carousel').slick({
+    autoplay: true
+  });
+
 });
 
 // https://www.youtube.com/watch?v=_EGO-d9H184  <-- Tutorial where code is from //

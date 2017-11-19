@@ -85,3 +85,14 @@ html, body {
   display: flex;
   justify-content: flex-end;
 }
+
+
+/* CV */
+#cv {
+  height: 1000px;
+  margin-left: 120px;
+}
+
+#cv .image-container{
+  margin-bottom: -300px;
+}

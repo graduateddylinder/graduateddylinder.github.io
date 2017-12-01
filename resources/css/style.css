@@ -5,6 +5,25 @@ html, body {
   font-family: 'Open Sans';
 }
 
+.image_credit {
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0.6;
+}
+
+span {
+  padding: 25px 0px 25px 200px;
+  display: block;
+  font-size: 2rem;
+}
+
+p {
+  padding-left: 200px;
+}
+
+i {
+  font-style: italic;
+}
 
 /* Navigation Bar */
 .navbar {
@@ -84,17 +103,27 @@ html, body {
   font-size: 2.5rem;
 }
 
-#about_me .image_credit {
-  display: flex;
-  justify-content: flex-end;
+@media only screen and (max-width: 1500px) {
+  #about_me span {
+    padding: 0px 200px;
+    padding-top: 50px;
+    display: block;
+    font-size: 1.75rem;
+  }
 }
 
 
 /* CV */
 #cv {
-  margin-left: 200px;
-  background-color: black;
   text-align: center;
+  background-image: url("../images/max-mckinnon-41529.jpg");*/
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#cv .container-fluid {
+  margin-left: 200px;
 }
 
 #cv .carousel {
@@ -129,4 +158,50 @@ html, body {
 #cv .image-container img {
   height: 100%;
   width: 100%;
+}
+
+/* Publications */
+#publications {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  background-image: url("../images/greg-rakozy-53292.jpg");*/
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#publications h1 {
+  padding: 0px 0px 50px 200px;
+}
+
+#publications a {
+  color: white;
+}
+
+#publications p {
+  padding-top: 75px;
+}
+
+@media only screen and (max-width: 1500px) {
+  #publications h1 {
+    padding: 0px 0px 20px 200px;
+  }
+  #publications span {
+    padding: 0px 200px;
+    padding-top: 25px;
+    display: block;
+    font-size: 1.75rem;
+    width: 100%;
+  }
 }

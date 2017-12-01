@@ -13,7 +13,8 @@ $(document).ready(function() {                      // Begin every .js with this
   });
 
   $('.carousel').slick({
-    autoplay: true
+    autoplay: true,
+    arrows: false
   });
 
 });

@@ -18,5 +18,11 @@ $(document).ready(function() {                      // Begin every .js with this
   });
 
 });
-
 // https://www.youtube.com/watch?v=_EGO-d9H184  <-- Tutorial where code is from //
+
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+// https://github.com/twbs/bootstrap/issues/9013 kevinknelson commet //

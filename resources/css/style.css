@@ -25,6 +25,13 @@ i {
   font-style: italic;
 }
 
+.anchor {
+  display: block;
+  height: 55px;
+  margin-top: -50px;
+  visibility: hidden;
+}
+
 /* Navigation Bar */
 .navbar {
   color: white;
@@ -139,7 +146,8 @@ i {
 
   .jumbotron h1 {
     padding-left: 50px;
-    padding-top: 100px;
+    padding-top: 50px;
+    font-size: 5rem;
   }
 }
 
@@ -162,10 +170,6 @@ i {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-}
-
-#about_me .container-fluid {
-
 }
 
 #about_me span {
@@ -206,6 +210,9 @@ i {
   }
 }
 
+@media only screen and (max-width: 768px) {
+
+}
 
 /* CV */
 #cv {
@@ -252,6 +259,12 @@ i {
 #cv .image-container img {
   height: 100%;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  #cv {
+    display: none;
+  }
 }
 
 /* Publications */

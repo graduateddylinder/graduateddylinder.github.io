@@ -27,7 +27,7 @@ i {
 
 /* Navigation Bar */
 .navbar {
-  color:white;
+  color: white;
   opacity: 0.8;
 }
 
@@ -39,14 +39,62 @@ i {
 }
 
 .navbar-fixed-left .navbar-nav > li {
-  /* float: none;  /* Cancel default li float: left */
+  float: none;  /* Cancel default li float: left */
   width: 160px;
 }
 
-.navbar-fixed-left .navbar-nav > li > a > i{
-  /* float: none;  /* Cancel default li float: left */
+.navbar-fixed-left .navbar-nav > li > a > i {
+  float: none;  /* Cancel default li float: left */
   padding-right: 20px;
 }
+
+.navbar-fixed-top .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 160px;
+}
+
+.navbar-fixed-top .navbar-nav > li > a > i {
+  float: none;  /* Cancel default li float: left */
+  padding-right: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  #mobile_nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #desktop_nav {
+    display: none;
+  }
+
+  .navbar {
+    opacity: 1;
+  }
+
+  #mobile_nav h2 {
+    padding-left: 10px;
+  }
+
+  #mobile_nav span {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .navbar-fixed-top .navbar-nav > a {
+    display: inline-block;
+    color: white;
+    padding: 0px 5px;
+  }
+
+  .navbar-fixed-top .navbar-nav > a > i {
+    display: block;
+  }
+
+}
+
 
 /* Jumbotron */
 .jumbotron {
@@ -69,6 +117,30 @@ i {
 .jumbotron h1 {
   font-family: 'Roboto Mono';
   padding-left: 250px;
+}
+
+@media only screen and (max-width: 800px) {
+  .jumbotron {
+    color: white;
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    background-image: url("../images/jumbotron_background_mobile.png");*/
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .jumbotron h1 {
+    padding-left: 50px;
+    padding-top: 100px;
+  }
 }
 
 /* About Me */
@@ -109,6 +181,28 @@ i {
     padding-top: 50px;
     display: block;
     font-size: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  #about_me {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    background-image: url("../images/nasa-45068-reduced.PNG");*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed;*/
   }
 }
 
@@ -202,6 +296,19 @@ i {
     padding-top: 25px;
     display: block;
     font-size: 1.75rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  #publications h1 {
+    padding: 0px 0px 20px 200px;
+  }
+  #publications span {
+    padding: 0px 200px;
+    padding-top: 20px;
+    display: block;
+    font-size: 1.25rem;
     width: 100%;
   }
 }

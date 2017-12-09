@@ -156,9 +156,8 @@ i {
     margin: 0;
     text-align: left;
     background-image: url("../images/jumbotron_background_tiny.png");*/
-    background-position: center center;
+    background-position: center;
     background-size: cover;
-    background-attachment: fixed;
   }
 
   .jumbotron h1 {

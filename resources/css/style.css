@@ -27,8 +27,8 @@ i {
 
 .anchor {
   display: block;
-  height: 55px;
-  margin-top: -50px;
+  height: 75px;
+  margin-top: -75px;
   visibility: hidden;
 }
 
@@ -158,10 +158,10 @@ i {
     background-image: url("../images/jumbotron_background_tiny.png");*/
     background-position: center;
     background-size: contain;
+    text-align: center;
   }
 
   .jumbotron h1 {
-    padding-left: 50px;
     padding-top: 50px;
     font-size: 5rem;
   }

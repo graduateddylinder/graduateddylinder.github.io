@@ -123,24 +123,52 @@ i {
 /* Jumbotron */
 .jumbotron {
   color: white;
+  /* text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  background-image: url("../images/AO_jumbotron.jpg");*/
+  background-origin: content-box;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.jumbotron_text {
+  background-color: black;
+}
+
+.jumbotron h3 {
+  font-family: 'Bitter';
   text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  text-align: left;
-  background-image: url("../images/jumbotron_background_reduced.jpg");*/
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
+  font-weight: bold;
+  padding-left: 215px;
+  max-width: 75%;
+  background-color: rgba(128,128,128,0.7);
+  background-clip: content-box;
 }
 
-.jumbotron h1 {
+.jumbotron span {
   font-family: 'Open Sans';
-  padding-left: 250px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-weight: bold;
+  padding-left: 400px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -154,17 +182,17 @@ i {
     height: 100%;
     width: 100%;
     margin: 0;
-    position: relative;
-    background-image: url("../images/jumbotron_background_tiny.png");*/
+    background-image: url("../images/AO_jumbotron_mobile.jpg");*/
     background-position: center;
     background-size: 100%;
     text-align: center;
   }
 
-  .jumbotron h1 {
+  .jumbotron h3 {
     padding-top: 50px;
-    padding-left: 0;
-    font-size: 5rem;
+    max-width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 
@@ -183,9 +211,11 @@ i {
   width: 100%;
   margin: 0;
   text-align: left;
-  background-image: url("../images/nasa-45068.jpg");*/
+  background-image: url("../images/Dylan_River.jpeg");*/
+  background-origin: content-box;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
@@ -219,8 +249,7 @@ i {
     height: 100%;
     width: 100%;
     margin: 0;
-    text-align: left;
-    background-image: url("../images/nasa-45068-reduced.PNG");*/
+    text-align: left;*/
     /*background-position: center;*/
     /*background-size: cover;*/
     /*background-attachment: fixed;*/
@@ -230,6 +259,7 @@ i {
 @media only screen and (max-width: 768px) {
   #about_me {
     text-align: left;
+    background-image: url("../images/Dylan_River_mobile.jpeg");
   }
 
   #about_me span {

@@ -142,11 +142,15 @@ i {
   background-attachment: fixed;
 }
 
-.jumbotron_text {
-  background-color: black;
+.jumbo_text {
+  background-color: rgba(0,0,0,0.6);
+  margin-left: 250px;
+  border-radius: 25px;
+  transform: skew(-10deg);
+  max-width: 65%
 }
 
-.jumbotron h3 {
+.jumbo_text h3 {
   font-family: 'Bitter';
   text-shadow:
     -1px -1px 0 #000,
@@ -154,21 +158,11 @@ i {
     -1px 1px 0 #000,
     1px 1px 0 #000;
   font-weight: bold;
-  padding-left: 215px;
-  max-width: 75%;
-  background-color: rgba(128,128,128,0.7);
+  transform: skew(10deg);
+  padding: 2em;
+  padding-right: 1em;
+  /*background-color: rgba(0,0,0,0.7);*/
   background-clip: content-box;
-}
-
-.jumbotron span {
-  font-family: 'Open Sans';
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-  font-weight: bold;
-  padding-left: 400px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -186,21 +180,34 @@ i {
     background-position: center;
     background-size: 100%;
     text-align: center;
+    background-size: cover;
   }
 
-  .jumbotron h3 {
+  .jumbo_text {
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 25px;
+    transform: skew(0deg);
+    margin: auto;
+    margin-top: 50px;
+    width:100%;
+  }
+
+  .jumbo_text h3 {
     padding-top: 50px;
-    max-width: 100%;
     padding-left: 2em;
     padding-right: 2em;
+    transform: skew(0deg);
+    padding: 0;
+    font-size: 20px;
+    padding: 0.5em;
   }
 }
 
 /* About Me */
-#about_me {
+.about_me {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
   color: white;
   text-shadow:
     -1px -1px 0 #000,
@@ -211,19 +218,43 @@ i {
   width: 100%;
   margin: 0;
   text-align: left;
-  background-image: url("../images/Dylan_River.jpeg");*/
+  background-image: url("../images/About_Me_background.jpeg");*/
   background-origin: content-box;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-#about_me span {
-  padding: 0px 200px;
-  padding-top: 100px;
+ .about_me_content {
   display: block;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  margin: auto;
+  margin-left: 250px;
+  width:60%;
+  height:80%;
+}
+
+.about_me_content img {
+  display:block;
+  margin:auto;
+  padding: 1em;
+  background-color: rgba(85,107,47,0.8);
+  border-radius: 10px;
+}
+
+.about_me_text {
+  margin: auto;
+  background-color: rgba(85,107,47,0.6);
+  margin-top: 3em;
+  border-radius: 10px;
+}
+
+.about_me_text p {
+  font-family: "Bitter";
+  background-color: rgba(85,107,47,0.6);
+  padding: 0.5em;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -259,7 +290,7 @@ i {
 @media only screen and (max-width: 768px) {
   #about_me {
     text-align: left;
-    background-image: url("../images/Dylan_River_mobile.jpeg");
+    background-image: url("../images/About_Me_background_mobile.jpeg");
   }
 
   #about_me span {
@@ -268,6 +299,14 @@ i {
     display: block;
     font-size: 1.5rem;
   }
+
+  .about_me_content {
+   display: block;
+   font-size: 1.5rem;
+   margin: auto;
+   width:90%;
+   height:90%;
+ }
 }
 
 /* CV */

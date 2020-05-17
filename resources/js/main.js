@@ -14,7 +14,7 @@ $(document).ready(function() {                      // Begin every .js with this
 
   $('.carousel').slick({
     autoplay: true,
-    arrows: false
+    arrows: true
   });
 
 });

@@ -296,6 +296,7 @@ i {
     text-align: left;
     background-image: url("../images/About_Me_background_mobile.jpeg");
     overflow-y: scroll;
+    background-attachment: scroll;
   }
 
   #about_me span {
@@ -433,6 +434,7 @@ i {
     /*background-repeat: repeat-y;
     overflow: hidden;*/
     overflow-y: scroll;
+    background-attachment: scroll;
   }
 
   #publications h1 {

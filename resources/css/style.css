@@ -221,7 +221,7 @@ i {
   width: 100%;
   margin: 0;
   text-align: left;
-  background-image: url("../images/About_Me_background.jpeg");*/
+  background-image: url("../images/Red_Rocks_background.jpeg");*/
   background-origin: content-box;
   background-position: center center;
   background-size: cover;
@@ -243,20 +243,20 @@ i {
   display:block;
   margin:auto;
   padding: 1em;
-  background-color: rgba(85,107,47,0.8);
+  background-color: rgba(39,73,40,0.7);
   border-radius: 10px;
 }
 
 .about_me_text {
   margin: auto;
-  background-color: rgba(85,107,47,0.6);
+  background-color: rgba(39,73,40,0.7);
   margin-top: 3em;
   border-radius: 10px;
 }
 
 .about_me_text p {
   font-family: "Bitter";
-  background-color: rgba(85,107,47,0.6);
+  background-color: rgba(39,73,40,0.7);
   padding: 0.5em;
   border-radius: 10px;
 }
@@ -294,7 +294,7 @@ i {
 @media only screen and (max-width: 790px) {
   #about_me {
     text-align: left;
-    background-image: url("../images/About_Me_background_mobile.jpeg");
+    background-image: url("../images/Red_Rocks_background_mobile.jpeg");
     overflow-y: scroll;
     background-attachment: scroll;
   }
